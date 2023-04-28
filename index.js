@@ -29,7 +29,7 @@ server.get('/students', async (req,res) => {
 
 
 async function getStudents() {
-  const students = await db.any('select * from "Students"', [true])
+  const students = await db.any('select * from students', [true])
 }
 
 server.listen(port, () => {
